@@ -29,6 +29,24 @@ describe ListaDE::ListaDE do
 	            expect(@lista.cabeza != nil && @lista.siguiente == nil && @lista.anterior == nil) 
 	    	end
     		
+    		it "Existe una lista con su cabeza y cola" do
+                expect(@lista.cabeza != nil && @lista.cola != nil)
+            end
+            
+            it "Existe un método para insertar por la cabeza" do
+    		    expect(@lista).to respond_to :insertar_cabeza
+    		end
+    		
+		    it "Se puede insertar un elemento en la lista" do
+           	    @lista.insertar_cabeza(@nodo)
+            	expect(@lista.cabeza) == (@nodo)
+        	end
+        	
+    		it "Se puede insertar varios nodos en la lista" do
+        		@lista.insertar_cabeza(@nodo2)
+        		@lista.insertar_cabeza(@nodo3)
+        		expect(@lista.cabeza) == (@nodo3)
+    		end
     		
     	end
     end
