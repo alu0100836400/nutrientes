@@ -17,7 +17,17 @@ describe ListaDE::ListaDE do
     		    expect(@lista.class) == ListaDE::ListaDE
     		end
     		
+    		it "Existe el nodo para la lista" do
+                expect(@nodo.class) == ListaDE::Nodo
+            end
+
+    		it "Existe un struct nodo con anterior y siguiente" do
+    		    expect(@nodo).to have_attributes(:valor => 4, :siguiente =>nil, :anterior =>nil)
+    		end
     		
+	    	it "Existe un Nodo de la lista con su dato, su siguiente y su anterior" do
+	            expect(@lista.cabeza != nil && @lista.siguiente == nil && @lista.anterior == nil) 
+	    	end
     		
     		
     	end
