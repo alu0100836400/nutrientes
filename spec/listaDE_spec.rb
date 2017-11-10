@@ -48,6 +48,24 @@ describe ListaDE::ListaDE do
         		expect(@lista.cabeza) == (@nodo3)
     		end
     		
+    		it "Existe un método para extraer por la cabeza" do
+    	    	expect(@lista).to respond_to :extraer_cabeza
+    		end
+    		
+    		it "Se puede extraer un elemento de la lista" do
+        		@lista.extraer_cabeza()
+        		expect(@lista.cabeza) == (@nodo2)
+    		end
+		
+		    it "Existe un método para extraer por el final" do
+                expect(@lista).to respond_to :extraer_cola
+            end
+
+            it "Se puede extraer un elemento de lista" do
+                @lista.extraer_cola()
+                expect(@lista.cabeza) == (@nodo2)
+            end
+    		
     	end
     end
 end
