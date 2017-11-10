@@ -44,6 +44,34 @@ module ListaDE
     			@cola = @aux
             end
         end
+        
+        def extraer_cabeza
+            if @cabeza != nil
+                @aux = @cabeza
+                @cabeza = @aux.siguiente
+                @aux
+            else
+                puts 'Lista vacia'
+            end
+        end
+        
+        def extraer_cola
+            if @cola != nil
+                @aux = @cola
+                @cola = @aux.anterior
+                @aux
+            else
+                puts 'Lista vacia'
+            end
+        end
+        
+        # def to_s
+        #     aux = @cabeza
+        #     #while aux.siguiente do
+        #         puts aux.siguiente.valor.to_s
+        #         aux = aux.siguiente
+        #     #end
+        # end
 
     end
     
