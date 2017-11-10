@@ -16,6 +16,10 @@ describe ListaDE::ListaDE do
     		it "Existe la clase listaDE" do
     		    expect(@lista.class) == ListaDE::ListaDE
     		end
+    		
+    		
+    		
+    		
     	end
     end
 end
