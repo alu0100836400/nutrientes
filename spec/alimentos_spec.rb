@@ -4,7 +4,7 @@ require_relative '../lib/alimento/carne'
 
 describe Alimento::Carne do
 	before :each do
-	 	@carne = Alimento::Carne.new()
+	 	@carne = Alimento::Carne.new("Ternera",1,2,3)
         
 	end
 	describe "Carne" do
