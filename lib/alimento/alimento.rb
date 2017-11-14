@@ -1,27 +1,14 @@
 module Alimento
     
     class Alimento
+        
+        attr_accessor :nombre, :proteinas, :glucidos, :lipidos,
+        
         def initialize(nombre, pro, glu, lip)
             @nombre = nombre
             @proteinas = pro
             @glucidos = glu
             @lipidos = lip
-        end
-        
-        def get_proteinas
-            return @proteinas
-        end
-        
-        def get_glucidos
-            return @glucidos
-        end
-        
-        def get_lipidos
-            return @lipidos
-        end
-        
-        def get_nombre
-            return @nombre
         end
         
         def to_s

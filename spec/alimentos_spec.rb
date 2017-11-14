@@ -14,6 +14,10 @@ describe Alimento::Carne do
     		    expect(@carne.class) == Alimento::Carne
     		end
     		
+    		it "Carne es heredada de alimento" do
+    		    expect(@carne.class) == Alimento
+    		end
+    		
     	end
     end
 end
