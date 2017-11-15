@@ -65,7 +65,17 @@ describe ListaDE::ListaDE do
                 @lista.extraer_cola()
                 expect(@lista.cabeza) == (@nodo2)
             end
-    		
+            
+            context "#Probando enumerable" do
+                before :each do
+                    @milista = ListaDE::ListaDE.new
+                end
+                
+                it "Metodo each" do
+        		    @milista.each{|i| i}
+        		end
+
+            end
     	end
     end
 end
