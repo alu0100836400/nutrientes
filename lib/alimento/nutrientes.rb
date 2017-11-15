@@ -1,19 +1,20 @@
 module Alimento
     class Nutrientes
+        
         def initialize(alimento)
             @alimento_ = alimento
         end
         
         def kc_proteinas()
-            return @alimento_.proteinas*4
+            return @alimento_.get_proteinas*4
         end
         
         def kc_glucidos()
-            return @alimento_.glucidos*4
+            return @alimento_.get_glucidos*4
         end
         
         def kc_lipidos()
-            return @alimento_.lipidos*9
+            return @alimento_.get_lipidos*9
         end
         
         def sumar_kc()

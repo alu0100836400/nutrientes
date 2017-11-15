@@ -6,6 +6,7 @@ describe Alimento do
         
         before :each do
             @nutrientes = Alimento::Nutrientes.new(Alimento::Alimento.new("arroz",2,3,4))
+            @a
         end
         
         it "comprobar que multiplica proteinas" do
@@ -23,8 +24,33 @@ describe Alimento do
         it "comprobar suma de kilocalorias" do
             expect(@nutrientes.sumar_kc).to eq(56)
         end
+        
+        #p8
+        
+        it "comprobar que existe el método de comparación" do
+            expect(@nutrientes).to respond_to('<=>')
+        end
+        
+        context "#Comparaciones entre dos alimentos basado en sus kilocalorias" do
+            before :each do
+                @arroz = Alimento::Nutrientes.new(Alimento::Alimento.new("arroz",2,3,4))
+                @pollo = Alimento::Nutrientes.new(Alimento::Alimento.new("pollo",20,30,40))
+                @arroz2 = Alimento::Nutrientes.new(Alimento::Alimento.new("arroz",2,3,4))
+            end
+            it "El arroz es menor que el pollo" do
+                expect(@arroz < @pollo).to eq(true)
+            end
+            
+            it "El arroz es igual que otro arroz" do
+                expect(@arroz == @arroz2).to eq(true)
+            end
+            
+            it "El arroz es distinto que el pollo" do
+                expect(@arroz == @pollo).to eq(false)
+            end
+        end
     # end
-    
+
     # describe Alimento do
         
         before :each do
