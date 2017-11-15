@@ -1,8 +1,14 @@
 module Alimento
     class Nutrientes
         
+        include Comparable
+        
         def initialize(alimento)
             @alimento_ = alimento
+        end
+        
+        def <=>(other)
+            self.sumar_kc<=>other.sumar_kc
         end
         
         def kc_proteinas()
