@@ -74,7 +74,14 @@ describe ListaDE::ListaDE do
                 it "Metodo each" do
         		    @milista.each{|i| i}
         		end
-
+        		
+        		it "Metodo count" do
+        		  expect( @milista.count).to eq(0)
+        		end
+        		
+        		it "Metodo all" do
+        		    expect(@milista.all?).to eq(true)
+        		end
             end
     	end
     end
