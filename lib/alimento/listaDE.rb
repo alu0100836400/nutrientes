@@ -3,12 +3,22 @@ module ListaDE
     Nodo = Struct.new(:valor, :siguiente, :anterior)
     
     class ListaDE
+
+        include Enumerable
         
         attr_accessor :cabeza,:cola,
         
         def initialize()
             @cabeza = nil
             @cola = nil
+        end
+        
+        def each()
+            temp=@cabeza
+            while (temp != nil) do
+                yield temp.valor
+                temp=temp.siguiente 
+            end
         end
         
         def insertar_cabeza(nuevoNodo)
