@@ -1,3 +1,19 @@
+# = nutrientes.rb
+#
+# Autor::   Javier Alberto Martín
+# Web::     https://github.com/ULL-ESIT-LPP-1718/tdd-alu0100836400
+#
+# === Clase Nutrientes
+#
+# Definición de la clase _Nutrientes_ compuesta por
+# * metodo initialize
+# * metodo <=>
+# * metodo kc_proteinas
+# * metodo kc_glucidos
+# * metodo kc_lipidos
+# * metodo sumar_kc
+
+
 module Alimento
     class Nutrientes
         

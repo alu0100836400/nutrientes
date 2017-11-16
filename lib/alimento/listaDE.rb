@@ -1,3 +1,18 @@
+# = listaDE.rb
+#
+# Autor::   Javier Alberto Martín
+# Web::     https://github.com/ULL-ESIT-LPP-1718/tdd-alu0100836400
+#
+# === Clase ListaDE
+#
+# Definición de la clase _ListaDE_ compuesta por
+# * metodo initialize
+# * metodo each
+# * metodo insertar_cabeza
+# * metodo insertar_cola
+# * metodo extraer_cabeza
+# * metodo extraer_cola
+
 module ListaDE
     
     Nodo = Struct.new(:valor, :siguiente, :anterior)

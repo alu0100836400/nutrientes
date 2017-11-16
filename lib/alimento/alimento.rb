@@ -1,3 +1,18 @@
+# = alimento.rb
+#
+# Autor::   Javier Alberto Martín
+# Web::     https://github.com/ULL-ESIT-LPP-1718/tdd-alu0100836400
+#
+# === Clase Alimento
+#
+# Definición de la clase _Alimento_ compuesta por
+# * metodo initialize
+# * metodo get_proteinas
+# * metodo get_glucidos
+# * metodo get_lipidos
+# * metodo get_nombre
+# * metodo to_s
+
 module Alimento
     
     class Alimento
