@@ -1,5 +1,3 @@
-#load 'poblacion.rb'
-
 class Indice_glucemico
     
     include Enumerable
