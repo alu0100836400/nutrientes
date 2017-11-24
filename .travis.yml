@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-    - 1.29.2
+    #- 1.29.2
 
-    - jruby 
+    - ruby 
     - 2.3.4p301
