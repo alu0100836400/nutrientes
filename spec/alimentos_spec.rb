@@ -1,6 +1,4 @@
 require 'spec_helper'
-require_relative '../lib/alimento/carne'
-
 
 describe Alimento::Carne do
 	before :each do

@@ -1,6 +1,4 @@
 require 'spec_helper'
-require_relative '../lib/alimento/listaDE'
-
 
 describe ListaDE::ListaDE do
 	before :each do

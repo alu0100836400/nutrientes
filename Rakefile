@@ -6,7 +6,7 @@ require "rspec/core/rake_task"
 
 RSpec::Core::RakeTask.new(:spec)
 
-task :default =>[ :nutrientes_prueba, :lista_prueba, :alimentos_prueba ]
+task :default =>[ :nutrientes_prueba, :lista_prueba, :alimentos_prueba, :indGlu_prueba ]
 
 desc "Ejecutar las espectativas de la clase nutrientes"
 task :nutrientes_prueba do
@@ -21,4 +21,9 @@ end
 desc "Ejecutar las espectativas de las clases de alimentos"
 task :alimentos_prueba do
   sh "rspec -I. spec/alimentos_spec.rb"
+end
+
+desc "Ejecutar las espectativas de la clase índice glucémico"
+task :indGlu_prueba do
+  sh "rspec -I. spec/ig_spec.rb"
 end

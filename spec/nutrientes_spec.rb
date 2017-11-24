@@ -1,4 +1,3 @@
-require 'alimento'
 require 'spec_helper'
 
 describe Alimento do
@@ -6,7 +5,6 @@ describe Alimento do
         
         before :each do
             @nutrientes = Alimento::Nutrientes.new(Alimento::Alimento.new("arroz",2,3,4))
-            @a
         end
         
         it "comprobar que multiplica proteinas" do
